@@ -6,15 +6,15 @@ require_relative "custom_download_strategy"
 class GitTools < Formula
   desc "Git tools allow you to manage your git repository easily."
   homepage "https://github.com/kazhuravlev/git-tools"
-  version "0.5.4"
+  version "0.5.5"
   license "MIT"
 
   depends_on "git"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://github.com/kazhuravlev/homebrew-git-tools/releases/v0.5.4/git-tools_0.5.4_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "1d66a3e1d250ac1256c15979243d2bbd0edf86bac2c7063716edc47f4bf387c6"
+      url "https://github.com/kazhuravlev/git-tools/releases/download/v0.5.5/git-tools_0.5.5_Darwin_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "995d09bd32e8eb268d965f278c1eb1ee302c97ae7652996d7eb5fda2531f41d2"
 
       def install
         bin.install "gt"
@@ -24,8 +24,8 @@ class GitTools < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/kazhuravlev/homebrew-git-tools/releases/v0.5.4/git-tools_0.5.4_Linux_arm64.tar.gz", using: CurlDownloadStrategy
-      sha256 "5f752bb171ded986c6d4c33646c48200d44f2f49b3820aaee26302826cb0c0cd"
+      url "https://github.com/kazhuravlev/git-tools/releases/download/v0.5.5/git-tools_0.5.5_Linux_arm64.tar.gz", using: CurlDownloadStrategy
+      sha256 "72fd4edd298a36685c54ccea6bd0979c6bfa770c0965c14ebd9146a88ecda9dd"
 
       def install
         bin.install "gt"
