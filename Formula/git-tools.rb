@@ -5,13 +5,13 @@
 class GitTools < Formula
   desc "Git tools allow you to manage your git repository easily."
   homepage "https://github.com/kazhuravlev/git-tools"
-  version "0.11.0"
+  version "0.11.1"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/kazhuravlev/git-tools/releases/download/v0.11.0/git-tools_Darwin_arm64.tar.gz"
-      sha256 "cc6ac2ed890bd3ccf0aeae560f5549e353e0b7768c9cc4302de6f51898dc233a"
+      url "https://github.com/kazhuravlev/git-tools/releases/download/v0.11.1/git-tools_Darwin_arm64.tar.gz"
+      sha256 "dcaa846e843c6ef62c4cfd8e690fa124d3440faf1e1b07b01a2da7d85f797f69"
 
       def install
         bin.install "gt"
@@ -22,8 +22,8 @@ class GitTools < Formula
   on_linux do
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/kazhuravlev/git-tools/releases/download/v0.11.0/git-tools_Linux_arm64.tar.gz"
-        sha256 "6108bffbeddafaf8fe35b59a9063c7bbf764c0a5c69eea98a2acd8cadab41173"
+        url "https://github.com/kazhuravlev/git-tools/releases/download/v0.11.1/git-tools_Linux_arm64.tar.gz"
+        sha256 "bde34e5764437a6943b492a5d1933b613508a907ec5b3fbf8d93466688436a52"
 
         def install
           bin.install "gt"
